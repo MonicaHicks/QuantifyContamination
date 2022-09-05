@@ -82,7 +82,7 @@ for i in range(n_zbins):
 smooth_z_maps = []
 
 for i in range(len(z_maps)):
-    smooth_z_maps.append(hp.sphtfunc.smoothing(z_maps[i], fwhm=np.radians(0.562), iter=1))
+    smooth_z_maps.append(hp.sphtfunc.smoothing(z_maps[i], fwhm=0.562, iter=1))
 
 
 # calculate E_{B-V} - <E_{B-V}> for each dust models
